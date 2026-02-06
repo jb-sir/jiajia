@@ -1085,6 +1085,9 @@
 </footer>
 
 <body>
+	<audio autoplay="autopaly" loop="loop" id="audios">
+    	    <source src="zz.mp3" type="audio/mp3" />
+	</audio>
 	<div class="love-background">
 		<div class="name-text">宝贝佳佳天天开心</div>
 		<div class="love">
@@ -1202,6 +1205,8 @@
 	</div>
 	<div class="progress-container hidden" id="progressContainer"> 第一阶段进度: <span id="progress">0</span>/5 </div>
 	<script>
+	document.addEventListener('WeixinJSBridgeReady', function() {
+    	document.getElementById('audios').play()
 		// var _hmt = _hmt || [];
 		//     (function() {
 		//     var hm = document.createElement("script");
